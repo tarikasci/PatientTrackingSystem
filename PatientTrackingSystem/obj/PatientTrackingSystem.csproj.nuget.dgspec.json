@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/PatientTrackingSystem.csproj": {}
+    "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\PatientTrackingSystem\\PatientTrackingSystem.csproj": {}
   },
   "projects": {
-    "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/BusinessLayer/BusinessLayer.csproj": {
+    "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/BusinessLayer/BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/BusinessLayer/BusinessLayer.csproj",
-        "packagesPath": "/Users/tarikasci/.nuget/packages/",
-        "outputPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/BusinessLayer/obj/",
+        "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\SENCAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tarikasci/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\SENCAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/DataAccessLayer.csproj": {
-                "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/DataAccessLayer.csproj"
+              "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj": {
-                "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj"
+              "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -60,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/DataAccessLayer.csproj": {
+    "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/DataAccessLayer.csproj",
-        "packagesPath": "/Users/tarikasci/.nuget/packages/",
-        "outputPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/",
+        "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\SENCAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tarikasci/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\SENCAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -86,8 +86,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj": {
-                "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj"
+              "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -151,21 +151,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj": {
+    "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj",
-        "packagesPath": "/Users/tarikasci/.nuget/packages/",
-        "outputPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/",
+        "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\SENCAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tarikasci/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\SENCAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -204,21 +204,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/PatientTrackingSystem.csproj": {
+    "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\PatientTrackingSystem\\PatientTrackingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/PatientTrackingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\PatientTrackingSystem\\PatientTrackingSystem.csproj",
         "projectName": "PatientTrackingSystem",
-        "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/PatientTrackingSystem.csproj",
-        "packagesPath": "/Users/tarikasci/.nuget/packages/",
-        "outputPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/obj/",
+        "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\PatientTrackingSystem\\PatientTrackingSystem.csproj",
+        "packagesPath": "C:\\Users\\SENCAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\PatientTrackingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tarikasci/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\SENCAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -230,14 +230,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/BusinessLayer/BusinessLayer.csproj": {
-                "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/BusinessLayer/BusinessLayer.csproj"
+              "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/DataAccessLayer.csproj": {
-                "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/DataAccessLayer.csproj"
+              "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj": {
-                "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj"
+              "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -320,7 +320,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

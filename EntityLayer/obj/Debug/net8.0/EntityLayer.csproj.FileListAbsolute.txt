@@ -9,3 +9,14 @@
 /Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/refint/EntityLayer.dll
 /Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/EntityLayer.pdb
 /Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/ref/EntityLayer.dll
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\bin\Debug\net8.0\EntityLayer.deps.json
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\bin\Debug\net8.0\EntityLayer.dll
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\bin\Debug\net8.0\EntityLayer.pdb
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\obj\Debug\net8.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfo.cs
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\obj\Debug\net8.0\EntityLayer.dll
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\obj\Debug\net8.0\refint\EntityLayer.dll
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
+C:\Users\SENCAN\Desktop\PatientTrackingSystem\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KMQX3FDJXA45IXuW6W2IM/9NiJ4k/MrtOi4Sv0nGn4dXB6TwPO0V/DQkCHyIB8+QKnaPSjC+qangmQjKqVHe1A==",
+  "dgSpecHash": "/pPyRBH12N54g+2DF5t86RsAt8eycFzWogFGiyHvmJI66chdy/YJWKyaNg84IzcKjif5hEEahSJgSgfDVh135Q==",
   "success": true,
-  "projectFilePath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj",
+  "projectFilePath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
