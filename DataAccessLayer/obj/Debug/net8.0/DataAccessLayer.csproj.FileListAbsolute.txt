@@ -1,0 +1,17 @@
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/bin/Debug/net8.0/DataAccessLayer.deps.json
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/bin/Debug/net8.0/DataAccessLayer.runtimeconfig.json
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/bin/Debug/net8.0/DataAccessLayer.dll
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/bin/Debug/net8.0/DataAccessLayer.pdb
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/bin/Debug/net8.0/EntityLayer.dll
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/bin/Debug/net8.0/EntityLayer.pdb
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.csproj.AssemblyReference.cache
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.AssemblyInfoInputs.cache
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.AssemblyInfo.cs
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.csproj.CoreCompileInputs.cache
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/DataAcce.E67BD773.Up2Date
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.dll
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/refint/DataAccessLayer.dll
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.pdb
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.genruntimeconfig.cache
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/DataAccessLayer/obj/Debug/net8.0/ref/DataAccessLayer.dll

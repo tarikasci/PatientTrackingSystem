@@ -1,0 +1,103 @@
+@using EntityLayer.Concrete
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model EntityLayer.Concrete.Doctor
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_DoctorLayout";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Doktor Profil Bilgileri Düzenleme</h4>
+            <br/>
+            <form id="doctorForm" class="forms-sample" asp-action="Index" asp-controller="DoctorDashboard" method="post">
+                <input type="text" asp-for="DoctorID" hidden="hidden">
+                <div class="form-group">
+                    <label for="exampleInputName1">İsim</label>
+                    <input type="text" asp-for="Name" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Soyisim</label>
+                    <input type="text" asp-for="Surname" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Mail Adresi</label>
+                    <input type="email" asp-for="MailAddress" class="form-control" id="exampleInputEmail3" placeholder="Mail Adresi" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Şifre</label>
+                    <input type="password" asp-for="Password" class="form-control" id="exampleInputPassword4" placeholder="Şifre" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Uzmanlık Alanı</label>
+                    <input type="text" asp-for="Specialty" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Hastane</label>
+                    <input type="text" asp-for="Hospital" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Fotoğraf</label>
+                    <input type="text" asp-for="DoctorImage" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Cinsiyet</label>
+                    <div class="col-md-10">
+                        <select id="Gender" name="Gender" asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-gradient-primary mr-2">Güncelle</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#doctorForm').on('submit', function (e) {
+            e.preventDefault(); // Formun normal gönderimini engelle
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("Index", "DoctorDashboard")',
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.success) {
+                        Swal.fire({
+                            title: 'Başarılı!',
+                            text: response.message,
+                            icon: 'success',
+                            confirmButtonText: 'Tamam'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.href = '@Url.Action("Index", "DoctorDashboard")';
+                            }
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Hata!',
+                            text: response.message,
+                            icon: 'error',
+                            confirmButtonText: 'Tamam'
+                        });
+                    }
+                },
+                error: function (xhr, status, error) {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: 'Güncelleme sırasında bir hata oluştu: ' + xhr.responseText,
+                        icon: 'error',
+                        confirmButtonText: 'Tamam'
+                    });
+                }
+            });
+        });
+    });
+</script>

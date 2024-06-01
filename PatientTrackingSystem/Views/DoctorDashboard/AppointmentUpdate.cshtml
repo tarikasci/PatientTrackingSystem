@@ -1,0 +1,85 @@
+@using EntityLayer.Concrete
+@model Appointment
+
+@{
+ViewBag.Title = "title";
+Layout = "_DoctorLayout";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Randevu Düzenleme</h4>
+            <br/>
+            <form id="appointmentForm" class="forms-sample" asp-action="AppointmentUpdate" asp-controller="DoctorDashboard" method="post">
+                <input type="text" asp-for="PatientID" hidden="hidden"/>
+                <input type="text" asp-for="AppointmentID" hidden="hidden"/>
+                <div class="form-group">
+                    <label>Hasta İsmi</label>
+                    <input type="text" class="form-control" value="@ViewBag.PatientName" readonly="readonly">
+                </div>
+                <div class="form-group">
+                    <label>Hasta Soyismi</label>
+                    <input type="text" class="form-control" value="@ViewBag.PatientSurname" readonly="readonly">
+                </div>
+                <div class="form-group">
+                    <label>Randevu Tarihi</label>
+                    <input type="date" class="form-control" asp-for="AppointmentDate" required="required">
+                </div>
+                <div class="form-group">
+                    <label>Randevu Saati</label>
+                    <input type="time" class="form-control" asp-for="AppointmentTime" required="required">
+                </div>
+                <button type="submit" class="btn btn-gradient-primary mr-2">Randevuyu Güncelle</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#appointmentForm').on('submit', function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("AppointmentUpdate", "DoctorDashboard")',
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.success) {
+                        Swal.fire({
+                            title: 'Başarılı!',
+                            text: response.message,
+                            icon: 'success',
+                            confirmButtonText: 'Tamam'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.href = '@Url.Action("GetAppointments", "DoctorDashboard")';
+                            }
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Hata!',
+                            text: response.message,
+                            icon: 'error',
+                            confirmButtonText: 'Tamam'
+                        });
+                    }
+                },
+                error: function (xhr, status, error) {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: 'Randevu düzenlenirken bir hata oluştu: ' + xhr.responseText,
+                        icon: 'error',
+                        confirmButtonText: 'Tamam'
+                    });
+                }
+            });
+        });
+    });
+</script>

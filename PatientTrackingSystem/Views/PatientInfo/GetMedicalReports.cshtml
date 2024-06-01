@@ -1,0 +1,42 @@
+@using EntityLayer.Concrete
+@model List<MedicalReport>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_PatientLayout";
+    int counter = 1;
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Tıbbi Raporlarınız</h4>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th> # </th>
+                    <th> Oluşturulma Tarihi </th>
+                    <th> Bilgi </th>
+                    <th> Doktor Adı ve Soyadı </th>
+                    <th>  </th>
+                    <th>  </th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var m in Model)
+                {
+                    <tr>
+                        <td> @counter </td>
+                        <td> @m.CreateDate </td>
+                        <td> @m.Info </td>
+                        <td> @m.Doctor.Name @m.Doctor.Surname </td>
+                        <td> <a class="form-control" href="/PatientInfo/DownloadReport/@m.ReportID">Raporu İndir</a> </td>
+                        <td> <a class="form-control">Raporu Önizle</a> </td>
+                    </tr>
+                    counter++;
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

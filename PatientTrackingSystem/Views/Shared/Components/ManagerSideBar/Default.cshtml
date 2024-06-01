@@ -1,0 +1,30 @@
+@using EntityLayer.Concrete
+@model Manager
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="block m-t-xs font-bold">@Model.Name @Model.Surname</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="/ManagerDashboard/Index/"><i class="fa fa-info-circle"></i> <span class="nav-label">Bilgilerimi Görüntüle</span></a>
+                </li>
+                <li>
+                    <a href="/ManagerDashboard/GetPatients/"><i class="fa fa-list"></i> <span class="nav-label">Hastaları Görüntüle</span></a>
+                </li>
+            </ul>
+            <ul class="nav metismenu" id="side-menu">
+                <li>
+                    <a href="/ManagerDashboard/GetDoctors/"><i class="fa fa-stethoscope"></i> <span class="nav-label">Doktorları Görüntüle</span></a>
+                </li>
+                <li>
+                    <a href="/ManagerDashboard/GetMedicalReports/"><i class="fa fa-paperclip"></i> <span class="nav-label">Tıbbi Raporları Görüntüle</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>

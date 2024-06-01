@@ -1,0 +1,48 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PT System | Manager Dashboard</title>
+
+    <link href="~/ManagerTheme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/ManagerTheme/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="~/ManagerTheme/css/animate.css" rel="stylesheet">
+    <link href="~/ManagerTheme/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+
+<div id="wrapper">
+
+    @await Component.InvokeAsync("ManagerSideBar")
+
+    <div id="page-wrapper" class="gray-bg">
+        @RenderBody()
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="~/ManagerTheme/js/jquery-3.1.1.min.js"></script>
+<script src="~/ManagerTheme/js/popper.min.js"></script>
+<script src="~/ManagerTheme/js/bootstrap.js"></script>
+<script src="~/ManagerTheme/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="~/ManagerTheme/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="~/ManagerTheme/js/inspinia.js"></script>
+<script src="~/ManagerTheme/js/plugins/pace/pace.min.js"></script>
+
+
+</body>
+
+</html>

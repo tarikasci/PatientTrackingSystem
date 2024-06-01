@@ -1,0 +1,11 @@
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/bin/Debug/net8.0/EntityLayer.deps.json
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/bin/Debug/net8.0/EntityLayer.dll
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/bin/Debug/net8.0/EntityLayer.pdb
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/EntityLayer.AssemblyInfo.cs
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/EntityLayer.dll
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/refint/EntityLayer.dll
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/EntityLayer.pdb
+/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/Debug/net8.0/ref/EntityLayer.dll

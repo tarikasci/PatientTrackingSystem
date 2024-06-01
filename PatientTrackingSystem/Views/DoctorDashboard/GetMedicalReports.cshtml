@@ -1,0 +1,57 @@
+@using EntityLayer.Concrete
+@model List<MedicalReport>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_DoctorLayout";
+    int counter = 1;
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Tıbbi Raporlarınız</h4>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th> # </th>
+                    <th> Oluşturulma Tarihi </th>
+                    <th> Bilgi </th>
+                    <th> Hasta Adı ve Soyadı </th>
+                    <th>  </th>
+                    <th>  </th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var m in Model)
+                {
+                    <tr>
+                        <td> @counter </td>
+                        <td> @m.CreateDate </td>
+                        <td> @m.Info </td>
+                        <td> @m.Patient.Name @m.Patient.Surname </td>
+                        <td> <a class="btn form-control" href="/DoctorDashboard/DownloadReport/@m.ReportID">Raporu İndir</a> </td>
+                        <td> <button class="form-control" onclick="previewReport(@m.ReportID)">Raporu Önizle</button> </td>
+                    </tr>
+                    counter++;
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function previewReport(reportId) {
+        $.post('/DoctorDashboard/PreviewReport', { reportId: reportId }, function(response) {
+            if (response.success) {
+                swal("Rapor İçeriği", response.text, "info");
+            } else {
+                swal("Hata!", response.message, "error");
+            }
+        });
+    }
+</script>

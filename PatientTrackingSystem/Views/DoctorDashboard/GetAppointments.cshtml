@@ -1,0 +1,124 @@
+@model System.Collections.Generic.List<EntityLayer.Concrete.Appointment>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_DoctorLayout";
+    int counter = 1;
+    int counter2 = 1;
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function confirmDeletion(appointmentId) {
+        swal({
+            title: "Emin misiniz?",
+            text: "Bu işlem geri alınamaz!",
+            icon: "warning",
+            buttons: ["Hayır","Evet"],
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    deleteAppointment(appointmentId);
+                }
+            });
+    }
+
+    function deleteAppointment(appointmentId) {
+        $.ajax({
+            url: '/DoctorDashboard/AppointmentDelete',
+            method: 'POST',
+            data: { id: appointmentId },
+            success: function(response) {
+                swal("İptal Edildi!", "Randevu başarıyla iptal edildi.", "success").then(value => {
+                    location.reload();
+                });
+            },
+            error: function(xhr, status, error) {
+                swal("Hata!", "Randevu iptal edilirken bir hata oluştu: " + error, "error");
+            }
+        });
+    }
+</script>
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Randevularınız</h4>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th> # </th>
+                    <th> Randevu Tarihi </th>
+                    <th> Randevu Saati </th>
+                    <th> Hasta Adı ve Soyadı </th>
+                    <th>  </th>
+                    <th>  </th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var m in Model)
+                {
+                    @if (m.AppointmentDate.CompareTo(DateOnly.FromDateTime(DateTime.Today)) > 0 && m.AppointmentStatus == true)
+                    {
+                        <tr>
+                            <td hidden="hidden">@m.AppointmentID</td>
+                            <td> @counter </td>
+                            <td> @m.AppointmentDate </td>
+                            <td> @m.AppointmentTime </td>
+                            <td> @m.Patient.Name @m.Patient.Surname </td>
+                            <td> <button onclick="confirmDeletion(@m.AppointmentID)" class="btn-danger form-control"> İptal Et </button> </td>
+                            <td> <a href="/DoctorDashboard/AppointmentUpdate/@m.AppointmentID" class="btn btn-info form-control"> Düzenle </a> </td>
+                        </tr>
+                        counter++;
+                    }
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">İptal Edilen veya Tarihi Geçmiş Randevular</h4>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th> # </th>
+                    <th> Randevu Tarihi </th>
+                    <th> Randevu Saati </th>
+                    <th> Hasta Adı ve Soyadı </th>
+                    <th> Randevu Durumu </th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var m in Model)
+                {
+                    @if (m.AppointmentDate.CompareTo(DateOnly.FromDateTime(DateTime.Today)) < 0 || m.AppointmentStatus == false)
+                    {
+                        <tr>
+                            <td> @counter2 </td>
+                            <td> @m.AppointmentDate </td>
+                            <td> @m.AppointmentTime </td>
+                            <td> @m.Patient.Name @m.Patient.Surname </td>
+                            @if (m.AppointmentStatus == false)
+                            {
+                                <td>İptal Edildi</td>
+                            }
+                            else
+                            {
+                                <td>Randevu Tarihi Geçti</td>
+                            }
+                        </tr>
+                        counter2++;
+                    }
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

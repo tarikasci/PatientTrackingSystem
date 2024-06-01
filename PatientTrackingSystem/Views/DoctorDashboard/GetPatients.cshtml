@@ -1,0 +1,44 @@
+@model System.Collections.Generic.List<EntityLayer.Concrete.Patient>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_DoctorLayout";
+    int counter = 1;
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hastalarınız</h4>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th> # </th>
+                    <th> Hasta Adı ve Soyadı </th>
+                    <th> Doğum Tarihi </th>
+                    <th> Cinsiyet </th>
+                    <th> Telefon Numarası </th>
+                    <th> Adres </th>
+                    <th> Mail Adresi </th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var m in Model)
+                {
+                    <tr>
+                        <td> @counter </td>
+                        <td> @m.Name @m.Surname </td>
+                        <td> @m.BirthDate </td>
+                        <td> @m.Gender </td>
+                        <td> @m.PhoneNumber </td>
+                        <td> @m.Address </td>
+                        <td> @m.MailAddress </td>
+                    </tr>
+                    counter++;
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<a class="btn btn-primary submit mb-4" href="/DoctorDashboard/AddPatient/">Hasta Ekle</a>

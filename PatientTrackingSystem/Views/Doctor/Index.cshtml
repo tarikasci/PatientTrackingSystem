@@ -1,0 +1,41 @@
+@using EntityLayer.Concrete
+@model List<Doctor>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_PatientLayout";
+}
+
+<section class="main-content-w3layouts-agileits">
+    <div class="container">
+        <h3 class="tittle">Doktorlar</h3>
+        <div class="inner-sec">
+            <div class="left-blog-info-w3layouts-agileits text-left">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                    <div class="col-lg-4 card">
+                        <a href="#"><img src="@item.DoctorImage" class="card-img-top img-fluid" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">@item.Name @item.Surname</a>
+                                <br/>
+                                <br/>
+                                <a href="#">@item.Gender</a>
+                                <br/>
+                                <br/>
+                                <a href="#">@item.Hospital</a>
+                                <br/>
+                                <br/>
+                                <a href="#">@item.Specialty</a>
+                            </h5>
+                            <p class="card-text mb-3"></p>
+                            <a href="/PatientInfo/MakeAnAppointment/@item.DoctorID" class="btn btn-primary read-m">Randevu Al</a>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

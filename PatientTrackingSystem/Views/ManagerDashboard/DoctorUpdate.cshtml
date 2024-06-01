@@ -1,0 +1,56 @@
+@using EntityLayer.Concrete
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model EntityLayer.Concrete.Doctor
+
+@{
+ViewBag.Title = "title";
+Layout = "_ManagerLayout";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Doktor Profil Bilgileri Düzenleme</h4>
+            <br/>
+            <form class="forms-sample" asp-action="DoctorUpdate" asp-controller="ManagerDashboard" method="post">
+                <input type="text" asp-for="DoctorID" hidden="hidden">
+                <div class="form-group">
+                    <label for="exampleInputName1">İsim</label>
+                    <input type="text" asp-for="Name" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Soyisim</label>
+                    <input type="text" asp-for="Surname" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Mail Adresi</label>
+                    <input type="email" asp-for="MailAddress" class="form-control" id="exampleInputEmail3" placeholder="Mail Adresi" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Şifre</label>
+                    <input type="password" asp-for="Password" class="form-control" id="exampleInputPassword4" placeholder="Şifre" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Uzmanlık Alanı</label>
+                    <input type="text" asp-for="Specialty" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Hastane</label>
+                    <input type="text" asp-for="Hospital" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Fotoğraf</label>
+                    <input type="text" asp-for="DoctorImage" class="form-control" id="exampleInputName1" placeholder="İsim Soyisim" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Cinsiyet</label>
+                    <div class="col-md-10">
+                        <select id="Gender" name="Gender" asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-gradient-primary mr-2">Güncelle</button>
+            </form>
+        </div>
+    </div>
+</div>

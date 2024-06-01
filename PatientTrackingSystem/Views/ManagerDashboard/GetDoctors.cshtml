@@ -1,0 +1,87 @@
+@model List<EntityLayer.Concrete.Doctor>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_ManagerLayout";
+    int counter = 1;
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function confirmDeletion(doctorId) {
+        swal({
+            title: "Emin misiniz?",
+            text: "Bu işlem geri alınamaz!",
+            icon: "warning",
+            buttons: ["Hayır","Evet"],
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    deleteDoctor(doctorId);
+                }
+            });
+    }
+
+    function deleteDoctor(doctorId) {
+        $.ajax({
+            url: '/ManagerDashboard/DoctorDelete',
+            method: 'POST',
+            data: { id: doctorId },
+            success: function(response) {
+                if (response.success) {
+                    swal("Silindi!", response.message, "success").then(value => {
+                        location.reload();
+                    });
+                } else {
+                    swal("Hata!", response.message, "error");
+                }
+            },
+            error: function(xhr, status, error) {
+                swal("Hata!", "Doktor silinirken bir hata oluştu: " + error, "error");
+            }
+        });
+    }
+</script>
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hastalar</h4>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th> # </th>
+                    <th> Doktor Adı ve Soyadı </th>
+                    <th> Uzmanlık Alanı </th>
+                    <th> Cinsiyet </th>
+                    <th> Hastane </th>
+                    <th> Mail Adresi </th>
+                    <th> </th>
+                    <th> </th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var m in Model)
+                {
+                    @if (m.DoctorStatus == true)
+                    {
+                        <tr>
+                            <td> @counter </td>
+                            <td> @m.Name @m.Surname </td>
+                            <td> @m.Specialty </td>
+                            <td> @m.Gender </td>
+                            <td> @m.Hospital </td>
+                            <td> @m.MailAddress </td>
+                            <td> <button onclick="confirmDeletion(@m.DoctorID)" class="btn-danger form-control"> Sil </button> </td>
+                            <td> <a href="/ManagerDashboard/DoctorUpdate/@m.DoctorID" class="btn btn-info form-control"> Güncelle </a> </td>
+                        </tr>
+                        counter++;
+                    }
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<a class="btn btn-primary submit mb-4" href="/ManagerDashboard/AddDoctor/">Doktor Ekle</a>

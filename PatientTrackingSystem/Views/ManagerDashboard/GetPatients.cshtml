@@ -1,0 +1,85 @@
+@model List<EntityLayer.Concrete.Patient>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_ManagerLayout";
+    int counter = 1;
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function confirmDeletion(patientId) {
+        swal({
+            title: "Emin misiniz?",
+            text: "Bu işlem geri alınamaz!",
+            icon: "warning",
+            buttons: ["Hayır","Evet"],
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    deleteAppointment(patientId);
+                }
+            });
+    }
+
+    function deleteAppointment(patientId) {
+        $.ajax({
+            url: '/ManagerDashboard/PatientDelete',
+            method: 'POST',
+            data: { id: patientId },
+            success: function(response) {
+                swal("Silindi!", "Hasta başarıyla silindi.", "success").then(value => {
+                    location.reload();
+                });
+            },
+            error: function(xhr, status, error) {
+                swal("Hata!", "Hasta silinirken bir hata oluştu: " + error, "error");
+            }
+        });
+    }
+</script>
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hastalar</h4>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th> # </th>
+                    <th> Hasta Adı ve Soyadı </th>
+                    <th> Doğum Tarihi </th>
+                    <th> Cinsiyet </th>
+                    <th> Telefon Numarası </th>
+                    <th> Adres </th>
+                    <th> Mail Adresi </th>
+                    <th> </th>
+                    <th> </th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var m in Model)
+                {
+                    @if (m.PatientStatus == true)
+                    {
+                        <tr>
+                            <td> @counter </td>
+                            <td> @m.Name @m.Surname </td>
+                            <td> @m.BirthDate </td>
+                            <td> @m.Gender </td>
+                            <td> @m.PhoneNumber </td>
+                            <td> @m.Address </td>
+                            <td> @m.MailAddress </td>
+                            <td> <button onclick="confirmDeletion(@m.PatientID)" class="btn-danger form-control"> Sil </button> </td>
+                            <td> <a href="/ManagerDashboard/PatientUpdate/@m.PatientID" class="btn btn-info form-control"> Güncelle </a> </td>
+                        </tr>
+                        counter++;
+                    }
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<a class="btn btn-primary submit mb-4" href="/ManagerDashboard/AddPatient/">Hasta Ekle</a>

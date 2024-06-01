@@ -1,0 +1,117 @@
+@using EntityLayer.Concrete
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model Doctor
+
+@{
+ViewBag.Title = "title";
+Layout = "_ManagerLayout";
+}
+
+<section class="main-content-w3layouts-agileits">
+    <div class="container">
+        <h3 class="tittle">Doktor Kayıt Sayfası</h3>
+        <div class="inner-sec">
+            <div class="login p-5 bg-light mx-auto mw-100">
+                <form id="patientForm" asp-action="AddDoctor" asp-controller="ManagerDashboard" method="post">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom01">Doktor Adı</label>
+                            <input type="text" class="form-control" id="Name" name="Name" asp-for="Name" data-val="false" required="required">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Doktor Soyadı</label>
+                            <input type="text" class="form-control" id="Surname" name="Surname" asp-for="Surname" data-val="false" required="required">
+                            <span asp-validation-for="Surname" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom01">Uzmanlık Alanı</label>
+                            <input type="text" class="form-control" id="Specialty" name="Specialty" asp-for="Specialty" data-val="false" required="required">
+                            <span asp-validation-for="Specialty" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Hastane</label>
+                            <input type="text" class="form-control" id="Hospital" name="Hospital" asp-for="Hospital" data-val="false" required="required">
+                            <span asp-validation-for="Hospital" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom01">Cinsiyet</label>
+                            <div class="col-md-10">
+                                <select id="Gender" name="Gender" asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+                                <span asp-validation-for="Gender" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Resim Yolu</label>
+                            <input type="text" class="form-control" id="DoctorImage" name="DoctorImage" asp-for="DoctorImage" data-val="false" required="required" placeholder="/PatientTheme/DoctorImages/x.jpg">
+                            <span asp-validation-for="DoctorImage" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Mail Adresi</label>
+                            <input type="email" class="form-control" id="MailAddress" name="MailAddress" asp-for="MailAddress" data-val="false" required="required">
+                            <span asp-validation-for="MailAddress" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1 mb-2">Şifre</label>
+                            <input type="password" class="form-control" id="Password" name="Password" asp-for="Password" data-val="false" placeholder="" required="required">
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <button type="submit" id="kayitOl" class="btn btn-primary submit mb-4">Doktor Ekle</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#patientForm').on('submit', function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("AddDoctor", "ManagerDashboard")',
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.success) {
+                        Swal.fire({
+                            title: 'Başarılı!',
+                            text: response.message,
+                            icon: 'success',
+                            confirmButtonText: 'Tamam'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.href = '@Url.Action("GetDoctors", "ManagerDashboard")';
+                            }
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Hata!',
+                            text: response.message,
+                            icon: 'error',
+                            confirmButtonText: 'Tamam'
+                        });
+                    }
+                },
+                error: function (xhr, status, error) {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: 'Doktor eklenirken bir hata oluştu: ' + xhr.responseText,
+                        icon: 'error',
+                        confirmButtonText: 'Tamam'
+                    });
+                }
+            });
+        });
+    });
+</script>

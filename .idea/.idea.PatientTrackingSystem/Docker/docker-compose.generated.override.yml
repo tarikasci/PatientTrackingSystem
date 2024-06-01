@@ -1,0 +1,22 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  patienttrackingsystem:
+    build:
+      context: "/Users/tarikasci/Code/DotNet/PatientTrackingSystem"
+      dockerfile: "PatientTrackingSystem/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/PatientTrackingSystem.dll"
+    environment:
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net8.0/PatientTrackingSystem.staticwebassets.runtime.CT.json"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "patienttrackingsystem:dev"
+    ports: []
+    volumes:
+    - "/Users/tarikasci/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem:/app:rw"
+    - "/Users/tarikasci/Code/DotNet/PatientTrackingSystem:/src:rw"
+    working_dir: "/app"
