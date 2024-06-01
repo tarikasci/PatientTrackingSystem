@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/tarikasci/.nuget/packages/": {}
+    "C:\\Users\\SENCAN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/EntityLayer.csproj",
-      "packagesPath": "/Users/tarikasci/.nuget/packages/",
-      "outputPath": "/Users/tarikasci/Code/DotNet/PatientTrackingSystem/EntityLayer/obj/",
+      "projectPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\EntityLayer.csproj",
+      "packagesPath": "C:\\Users\\SENCAN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SENCAN\\Desktop\\PatientTrackingSystem\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/tarikasci/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\SENCAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

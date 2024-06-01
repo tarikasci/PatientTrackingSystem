@@ -9,151 +9,151 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PatientTrackingSystem
 build_property.RootNamespace = PatientTrackingSystem
-build_property.ProjectDir = /Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/
+build_property.ProjectDir = C:\Users\SENCAN\Desktop\PatientTrackingSystem\PatientTrackingSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem
+build_property.MSBuildProjectDirectory = C:\Users\SENCAN\Desktop\PatientTrackingSystem\PatientTrackingSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Doctor/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yL0luZGV4LmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/AddMedicalReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yRGFzaGJvYXJkXEFkZE1lZGljYWxSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/AddMedicalReport.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yRGFzaGJvYXJkL0FkZE1lZGljYWxSZXBvcnQuY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/AddPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yRGFzaGJvYXJkXEFkZFBhdGllbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/AddPatient.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yRGFzaGJvYXJkL0FkZFBhdGllbnQuY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/AppointmentUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yRGFzaGJvYXJkXEFwcG9pbnRtZW50VXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/AppointmentUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yRGFzaGJvYXJkL0FwcG9pbnRtZW50VXBkYXRlLmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/GetAppointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yRGFzaGJvYXJkXEdldEFwcG9pbnRtZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/GetAppointments.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yRGFzaGJvYXJkL0dldEFwcG9pbnRtZW50cy5jc2h0bWw=
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/GetMedicalReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yRGFzaGJvYXJkXEdldE1lZGljYWxSZXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/GetMedicalReports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yRGFzaGJvYXJkL0dldE1lZGljYWxSZXBvcnRzLmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/GetPatients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yRGFzaGJvYXJkXEdldFBhdGllbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/GetPatients.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yRGFzaGJvYXJkL0dldFBhdGllbnRzLmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/DoctorDashboard/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Doctor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Login/DoctorLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vRG9jdG9yTG9naW4uY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Login/DoctorLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRG9jdG9yTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Login/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Login/ManagerLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vTWFuYWdlckxvZ2luLmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Login/ManagerLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTWFuYWdlckxvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/AddDoctor.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlckRhc2hib2FyZC9BZGREb2N0b3IuY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/AddDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxBZGREb2N0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/AddPatient.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlckRhc2hib2FyZC9BZGRQYXRpZW50LmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/AddPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxBZGRQYXRpZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/DoctorUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlckRhc2hib2FyZC9Eb2N0b3JVcGRhdGUuY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/DoctorUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxEb2N0b3JVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/GetDoctors.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlckRhc2hib2FyZC9HZXREb2N0b3JzLmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/GetDoctors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxHZXREb2N0b3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/GetPatients.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlckRhc2hib2FyZC9HZXRQYXRpZW50cy5jc2h0bWw=
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/GetPatients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxHZXRQYXRpZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlckRhc2hib2FyZC9JbmRleC5jc2h0bWw=
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/PatientUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlckRhc2hib2FyZC9QYXRpZW50VXBkYXRlLmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/ManagerDashboard/PatientUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlckRhc2hib2FyZFxQYXRpZW50VXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/AppointmentUpdate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudEluZm8vQXBwb2ludG1lbnRVcGRhdGUuY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/AppointmentUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEluZm9cQXBwb2ludG1lbnRVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/GetAppointments.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudEluZm8vR2V0QXBwb2ludG1lbnRzLmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/GetAppointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEluZm9cR2V0QXBwb2ludG1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/GetMedicalReports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudEluZm8vR2V0TWVkaWNhbFJlcG9ydHMuY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/GetMedicalReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEluZm9cR2V0TWVkaWNhbFJlcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudEluZm8vSW5kZXguY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEluZm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/MakeAnAppointment.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudEluZm8vTWFrZUFuQXBwb2ludG1lbnQuY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/PatientInfo/MakeAnAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEluZm9cTWFrZUFuQXBwb2ludG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Register/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvSW5kZXguY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/Components/DoctorSideBar/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvRG9jdG9yU2lkZUJhci9EZWZhdWx0LmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/Components/DoctorSideBar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRG9jdG9yU2lkZUJhclxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/Components/LoginHeader/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvTG9naW5IZWFkZXIvRGVmYXVsdC5jc2h0bWw=
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/Components/LoginHeader/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTG9naW5IZWFkZXJcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/Components/ManagerSideBar/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvTWFuYWdlclNpZGVCYXIvRGVmYXVsdC5jc2h0bWw=
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/Components/ManagerSideBar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFuYWdlclNpZGVCYXJcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_DoctorLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Eb2N0b3JMYXlvdXQuY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_DoctorLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Eb2N0b3JMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_ManagerLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19NYW5hZ2VyTGF5b3V0LmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_ManagerLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYW5hZ2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_PatientLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19QYXRpZW50TGF5b3V0LmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_PatientLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXRpZW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikasci/Code/DotNet/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-06lz3z7hrl
+[C:/Users/SENCAN/Desktop/PatientTrackingSystem/PatientTrackingSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-g0o1u9l5y3

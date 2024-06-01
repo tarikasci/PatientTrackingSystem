@@ -29904,12 +29904,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\reports\4142f57a-f3f0-4c41-93d5-a1be4b2c9013_rapor.pdf))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\reports\e6c3844e-8122-4bc6-a5b7-498c15193cec_Deney 3 Kırpıcı_kenetleyici  .pdf))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\reports\e6c3844e-8122-4bc6-a5b7-498c15193cec_Deney 3 K─▒rp─▒c─▒_kenetleyici  .pdf))">
       <SourceType>Package</SourceType>
       <SourceId>PatientTrackingSystem</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/PatientTrackingSystem</BasePath>
-      <RelativePath>reports/e6c3844e-8122-4bc6-a5b7-498c15193cec_Deney 3 Kırpıcı_kenetleyici  .pdf</RelativePath>
+      <RelativePath>reports/e6c3844e-8122-4bc6-a5b7-498c15193cec_Deney 3 K─▒rp─▒c─▒_kenetleyici  .pdf</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -29918,7 +29918,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\reports\e6c3844e-8122-4bc6-a5b7-498c15193cec_Deney 3 Kırpıcı_kenetleyici  .pdf))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\reports\e6c3844e-8122-4bc6-a5b7-498c15193cec_Deney 3 K─▒rp─▒c─▒_kenetleyici  .pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\reports\fff18422-c3a4-49d8-850f-d90f9bbc1bc3_rapor.pdf))">
       <SourceType>Package</SourceType>

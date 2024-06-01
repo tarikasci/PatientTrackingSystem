@@ -1,0 +1,48 @@
+@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Doktor Giriş Sayfası</title>
+    <link rel="stylesheet" href="~/DoctorTheme/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/DoctorTheme/assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="~/DoctorTheme/assets/css/style.css">
+    <link rel="shortcut icon" href="~/DoctorTheme/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper d-flex align-items-center auth">
+          <div class="row flex-grow">
+            <div class="col-lg-4 mx-auto">
+              <div class="auth-form-light text-left p-5">
+                <h4>Doktor Giriş Ekranı</h4>
+                <form method="post" class="pt-3">
+                  <div class="form-group">
+                    <input type="email" name="MailAddress" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" required="required">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="Password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" required="required">
+                  </div>
+                  <div class="mt-3">
+                    <button type="submit" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">Giriş Yap</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="~/DoctorTheme/assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="~/DoctorTheme/assets/js/off-canvas.js"></script>
+    <script src="~/DoctorTheme/assets/js/hoverable-collapse.js"></script>
+    <script src="~/DoctorTheme/assets/js/misc.js"></script>
+  </body>
+</html>
